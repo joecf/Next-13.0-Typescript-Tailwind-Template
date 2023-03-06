@@ -17,8 +17,9 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/public/*": ["./public/*"]
-    }
+    },
+    "target": "es5"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "./src/**/*.{ts,tsx}"],
+  "exclude": ["node_modules", "./node_modules"]
 }
